@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+   
+}
+
+body{
+    background: rgba(0, 0, 0, 0.5) url('/넷플릭스_홈페이지클론/로그인/login-images/header-image.jpg');
+    background-blend-mode: darken;
+}
+
+ .login{
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+    position: relative;
+    z-index: 0;
+} 
+
+.logo img{
+    width: 12%;
+    margin-left: 30px;
+}
+
+.Login_container{
+    position: absolute;
+    margin-left: 36%;
+    margin-top: 1%;
+    width: 440px;
+    height: 590px;
+    background-color: #000;
+}
+
+.Login_container h1{
+    color: #fff;
+    margin-top: 60px;
+    margin-left: 50px;
+    z-index: 2;
+    position: relative;
+
+} 
+
+input{
+    margin-left: 50px;
+    margin-top: 20px;
+    width: 320px;
+    height: 47px;
+    background-color: #333;
+    border-radius: 3px;
+    border: none;
+    font-size: 20px;
+}
+
+input::placeholder{
+    font-size: 17px;
+    margin-left: 15px;
+    padding: 12px;
+}
+
+input[type=submit]{
+    width: 320px;
+    height: 45px;
+    background-color: red;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+input[type=checkbox]{
+    width: 25px;
+    height: 18px;
+    border-radius: 5px;
+}
+
+label{
+    color: rgb(125, 119, 119);
+}
+
+.form a{
+    float: right;
+    margin-top: 24px;
+    margin-right: 64px;
+    color: rgb(125, 119, 119);
+    text-decoration: none;
+}
+
+.content{
+    position: absolute;
+    margin-top: 80px;
+    font-size: 9px;
+    margin-left: 55px;
+}
+
+.content h2{
+    color: rgb(125, 119, 119);
+}
+
+.container a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+ .netflix_footer{
+    border-top: 6px solid rgba(125, 119, 119, 0.7);
+    color: #777;
+    font-size: 1em;
+    margin-top: 80px;
+    min-width: 190px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: rgba(0,0,0,.75);
+    margin-top: 40%;
+}
+
+.netflix_footer h2 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.netflix_footer .col{
+    flex-basis: 50%;   
+     flex-grow: 1; 
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+}
+
+
+.netflix_footer .col a{
+    display: block;
+    text-decoration: underline;
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.netflix_footer .row{
+     align-items: flex-start;
+     padding: 10px 0;   
+     border-top: none;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     flex-wrap: wrap;
+}
+
+.netflix_footer .language_btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1.2rem;
+    font-size: 1rem;
+    text-align: left; 
+    border: 1px solid  white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    outline: white;
+    width: 120px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
+}
+
+.netflix_footer .language_btn::after{
+    text-align: right;
+    content: "▾";
+    font-size: 1rem;
+    position: relative;
+    margin-left: 18px;
+    
+}
+
+.netflix_footer .language_btn:checked + .language_btn::after{
+    transform: rotate(180deg);
+}
+
+.copyright-txt{
+    font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #b1afaf;
+}
+
+.netflix_info{
+    font-size: 10px;
+    margin-top: 20px;
+    color: #b1afaf;
+}
+
+.gonjung{
+    font-size: 10px;
+    margin-bottom: 14px;
+    color: #b1afaf;
+} 
+
+
+
+
+
+
+
+
+
+
+ @media only screen and (min-width: 360px) and (max-width: 720px){
+
+
+    body  {
+        background: black;
+       }
+
+       .logo img{
+        width: 48%;
+        margin-left: 30%;
+    }
+
+    .Login_container{
+        width: 90%;        
+    }
+    
+    .Login_container h1{
+        margin-top: 20px; 
+        margin-left: 20px; /
+    }
+    
+    input{
+        width: 90%;  
+        margin-top: 20px;
+        margin-left: 4%;
+    }
+    
+    input[type=submit]{
+        width: 90%; 
+        margin-top: 20px;
+    }
+    
+    .content{
+        font-size: 12px; 
+         margin-left: 20px;  
+    }
+    
+    .netflix_footer{
+        display: none;
+}
+} 
+
+
+
+
+
+
+
+/* @media only screen and (min-width: 360px) and (max-width: 720px) {
+   body  {
+    background: black;
+   }
+
+
+   .Login_container{
+    position: relative;
+    top: 100px;
+    width: 90%;
+    background-color: transparent;
+   }
+
+
+
+
+
+} */

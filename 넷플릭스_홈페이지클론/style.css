@@ -56,6 +56,12 @@ nav button{
     box-shadow: 0 5px 3px rgba(0, 0, 0, 0.45);
 }
 
+nav button a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
 nav .language_btn{
     display: inline-flex;
     background: var(--primary-color);
@@ -95,10 +101,10 @@ nav .language_btn::after{
 }
 
 .header-content h1{
-    font-size: 60px;
+    font-size: 40px;
     line-height: 70px;
     font-weight: 700;
-    max-width: 650px;
+    width: 95vw;
 }
 
 .header-content h3{
@@ -108,11 +114,13 @@ nav .language_btn::after{
 }
 
 .email-signup{
-    background: #fff;
+    /* background: #fff; */
+    border: 2px solid #666161;
     border-radius: 4px;
-    display: flex;
+    display: inline-flex;
     align-items: center;
     margin-top: 30px;
+    width: 65vw;
     overflow: hidden;
 }
 
@@ -121,17 +129,26 @@ nav .language_btn::after{
     border: 0;
     outline: 0;
     margin: 20px;
+    background: none;
+    font-size: 18px;
+    color: rgb(255,255,255);
 }
 
 .email-signup button{
     background: #db0001;
     border: 0;
     bottom: 0;
-    font-size: 15px;
+    margin: 0;
+    width: 20%;
+    font-size: 22px;
+    border: 1px solid #666161;
+    border-radius: 4px;
+    text-align: center;
     cursor: pointer;
     color: #fff;
     padding: 20px 3%;
 }
+
 
 
 .features{
@@ -261,8 +278,38 @@ input[type="radio"] {
 }
 
 .question .email-signup {
-    max-width: 600px;
-    margin: 20px auto 60px;
+    border: 2px solid #666161;
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 80vw;
+    overflow: hidden;
+}
+.question .email-signup input{
+    flex: 1;
+    border: 0;
+    outline: 0;
+    margin: 20px;
+    background: none;
+    font-size: 18px;
+    color: rgb(255,255,255);
+}
+
+.question .email-signup button{
+    background: #db0001;
+    border: 0;
+    bottom: 0;
+    margin: 0;
+    width: 20%;
+    font-size: 22px;
+    border: 1px solid #666161;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    padding: 20px 3%;
 }
 
 
@@ -414,29 +461,30 @@ input[type="radio"] {
 
     /* .email-signup 스타일 수정 */
     .email-signup {
-        background: #fff;
+        border: 2px solid #666161;
         border-radius: 4px;
-        display: flex;
+        display: inline-flex;
         align-items: center;
-        justify-content: center;
-        margin-top: 20px;
-        margin: 10px;
+        margin-top: 30px;
+        width: 94%;
+        overflow: hidden;
     }
 
     .email-signup input {
         flex: 1;
         border: 0;
         outline: 0;
-        margin: 10px ;
-        padding: 5px;
-        font-size: 14px;
-        width: 80%;
+        margin: 20px;
+        background: none;
+        font-size: 18px;
+        color: rgb(255,255,255);
     }
 
     .email-signup button {
         background: #db0001;
         border: 0;
         font-size: 12px;
+        width: 99%;
         cursor: pointer;
         color: #fff;
         padding: 20px 20px;
