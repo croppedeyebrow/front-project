@@ -116,6 +116,7 @@ nav .language_btn::after{
 .email-signup{
     /* background: #fff; */
     border: 2px solid #666161;
+    background-color: rgba(0,0,0,0.15);
     border-radius: 4px;
     display: inline-flex;
     align-items: center;
@@ -190,7 +191,109 @@ nav .language_btn::after{
 .img-col{
     flex-basis: 50%; 
     margin-bottom: 20px;
+    display: grid;
+    place-items: center;
 }
+
+.tv_anime_container{
+    width: 30rem;
+    height: 24rem;
+    position: relative;
+}
+
+
+.tv_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.tv_anime {
+    position: absolute;
+    top: 0.8rem;
+    left: 0;
+    width: 24rem;
+    height: 21rem;
+}
+
+.tv_anime_container_no2{
+    width: 30rem;
+    height: 24rem;
+    position: relative;
+    
+}
+
+.tv_anime_no2{  
+    position: absolute;
+    top: -10rem;
+    left: 5rem;
+    width: 16rem;
+    height: 36rem;
+}
+
+
+
+.tv_img_no2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+.download__container {
+	position: relative;
+}
+
+.download__container img {
+	width: 100%;
+	height: 100%;
+}
+
+.download_animation_container {
+	display: grid;
+	grid-template-columns: 4rem 1fr 5rem;
+	width: 28%;
+	height: 6rem;
+	/* padding: 1rem; */
+	align-items: center;
+	border: 2px solid rgba(255, 255, 255, 0.25);
+	border-radius: 1rem;
+	position: absolute;
+	left: 25%;
+	transform: translateX(-50%);
+	bottom: 15%;
+	background: black;
+}
+
+.download_animation_container img {
+	height: 80%;
+    
+}
+.download_animation_container .download__gif {
+	height: 30%;
+}
+
+.download_animation_container .text_container .title {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-bottom: 0.5rem;
+}
+
+.download_animation_container .text_container .downloading {
+	font-size: 0.8rem;
+	color: #0071eb;
+}
+
+.download_animation_container .text_container {
+	padding-left: 2rem;
+}
+
+
 
 
 .img-col img{
@@ -511,6 +614,61 @@ input[type="radio"] {
     .img-col img {
         width: 100%;
     }
+
+
+    .download_container {
+        position: absolute;
+    }
+    
+     .download_container img {
+        width: 100%;
+        height: 100%;
+    }  
+    
+    .download_animation_container {
+        display: grid;
+        grid-template-columns: 4rem 1fr 5rem;
+        /* display: block; */
+        word-wrap: break-word;
+        width: 65%;  
+        height: 24%;%; 
+         padding: 1rem; 
+        align-items: center;
+        border: 2px solid rgba(255, 255, 255, 0.25);
+        border-radius: 1rem;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 14%;
+        background: black;
+    }
+  
+    .download_animation_container .poster {
+      height: 100%;
+      
+    }
+    
+    .download_animation_container .download_gif {
+        height: 80%;
+    }
+    
+    .download_animation_container .text_container .title {
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+    
+    .download_animation_container .text_container .downloading {
+        font-size: 0.8rem;
+        color: #0071eb;
+    }
+    
+    .download_animation_container .text_container {
+        padding-left: 2rem;
+    } 
+    
+
+    
 
     /* .features h2 스타일 수정 */
     .features h2 {
